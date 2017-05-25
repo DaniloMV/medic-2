@@ -1,0 +1,104 @@
+// col
+// col showing no gap
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+// side navigation
+.side-nav {
+    width:100%;
+}
+
+.side-nav>li {
+    width: 100%;
+}
+
+// layout app page
+.left-right-padding {
+	padding: 0px 5px 0px 5px;
+}
+
+// select2
+/*select2 fullwidth*/
+.select2-container {
+    width: 100% !important;
+    padding: 0;
+}
+
+/*select2 height*/
+.select2-container .select2-selection--single {
+    height: 35px !important;
+}
+
+td .select2-container {
+    width: auto;
+}
+
+// glyphicons
+// glyphicons spinner setup
+.glyphicon.fast-right-spinner {
+    -webkit-animation: glyphicon-spin-r 1s infinite linear;
+    animation: glyphicon-spin-r 1s infinite linear;
+}
+
+.glyphicon.normal-right-spinner {
+    -webkit-animation: glyphicon-spin-r 2s infinite linear;
+    animation: glyphicon-spin-r 2s infinite linear;
+}
+
+.glyphicon.slow-right-spinner {
+    -webkit-animation: glyphicon-spin-r 3s infinite linear;
+    animation: glyphicon-spin-r 3s infinite linear;
+}
+
+@-webkit-keyframes glyphicon-spin-r {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes glyphicon-spin-r {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+// table
+/*table head row color setting*/
+tr.inverse {
+  color: white;
+}
+tr.inverse > th > a:hover, tr.inverse > th > a {
+  color: white;
+}
+
+/*table head row height*/
+tr.head {
+  height: 35px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/*hover row edit*/
+tr.row_edit {
+    cursor: pointer;
+}
+.row_edit:hover td {
+    background-color: #cde6ff;
+}
+
+// wait all code compilation done
+[v-cloak] {
+  display: none;
+}
